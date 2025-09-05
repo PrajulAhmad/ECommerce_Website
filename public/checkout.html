@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+      <nav>
+        <a href="index.html">Shop</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+    </header>
+
+    <main class="checkout-container">
+      <section class="checkout-summary">
+        <h2>Order Summary</h2>
+        <div id="order-items"></div>
+        <p>
+          <strong>Total: $<span id="order-total">0</span></strong>
+        </p>
+      </section>
+
+      <section class="checkout-form">
+        <h2>Shipping Information</h2>
+        <form id="payment-form">
+          <label>Full Name</label>
+          <input type="text" required />
+
+          <label>Address</label>
+          <input type="text" required />
+
+          <label>City</label>
+          <input type="text" required />
+
+          <label>Postal Code</label>
+          <input type="text" required />
+
+          <label>Payment Method</label>
+          <select required>
+            <option value="">Select</option>
+            <option value="cod">Cash on Delivery</option>
+            <option value="card">Credit/Debit Card</option>
+          </select>
+
+          <button type="submit">Place Order</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>
